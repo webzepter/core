@@ -9,8 +9,8 @@ module Shoppe
       content_tag :span, t("shoppe.orders.statuses.#{status}"), :class => "status-tag #{status}"
     end
 
-    def link_to_documentation(text = 'Get Help!', path)
-      link_to text, "http://localhost:3000/#{path}", class: 'button', target: '_blank'
+    def link_to_documentation(text, path, classes = '')
+      link_to text, "http://localhost:3000/#{path}", class: "button #{classes}", target: '_blank'
     end
 
     def attachment_preview(attachment, options = {})
