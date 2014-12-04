@@ -10,7 +10,7 @@ module Shoppe
     end
 
     def link_to_documentation(path)
-      link_to 'Get Help!', "http://localhost:3000/#{path}", class: 'button'
+      link_to 'Get Help!', "http://localhost:3000/#{path}", class: 'button', target: '_blank'
     end
 
     def attachment_preview(attachment, options = {})
