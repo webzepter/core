@@ -9,6 +9,10 @@ module Shoppe
       content_tag :span, t("shoppe.orders.statuses.#{status}"), :class => "status-tag #{status}"
     end
 
+    def link_to_documentation(path)
+      link_to 'Get Help!', "http://localhost:3000/#{path}", class: 'button'
+    end
+
     def attachment_preview(attachment, options = {})
       if attachment
         String.new.tap do |s|
