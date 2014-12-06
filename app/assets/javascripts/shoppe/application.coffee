@@ -59,8 +59,8 @@ $ ->
     options.width = element.data('dialog-width') if element.data('dialog-width')
     options.offset = element.data('dialog-offset') if element.data('dialog-offset')
     options.behavior = element.data('dialog-behavior') if element.data('dialog-behavior')
-    options.stack = false
-    options.id = 'ajax'
+    options.stack = null
+d    options.id = 'ajax'
     options.url = element.attr('href')
     Nifty.Dialog.open(options)
     false
